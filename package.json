@@ -1,0 +1,25 @@
+{
+  "name": "ts-node-template",
+  "version": "1.0.0",
+  "description": "Template project for Node TS projects",
+  "main": "out/index.js",
+  "scripts": {
+    "start": "node out/index.js",
+    "test": "mocha --reporter spec --compilers ts:ts-node/register test/**/*test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alikhil/ts-node-template.git"
+  },
+  "keywords": [
+    "Node",
+    "ts",
+    "template"
+  ],
+  "author": "Alik Khilazhev <alikhil@mail.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alikhil/ts-node-template/issues"
+  },
+  "homepage": "https://github.com/alikhil/ts-node-template#readme"
+}
