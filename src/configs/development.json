@@ -1,0 +1,6 @@
+{
+    "db": {
+        "databaseUrl": "<URL to database here>"
+    },
+    "port": 1337
+}
