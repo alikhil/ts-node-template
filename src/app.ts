@@ -1,6 +1,6 @@
-import * as logger from "morgan";
 import * as bodyParser from "body-parser";
 import * as express from "express";
+import * as logger from "morgan";
 
 import helloRoute from "./routes/hello";
 
@@ -20,16 +20,16 @@ class App {
     }
 
     private initRoutes(): void {
-        let router = express.Router();
+        const router = express.Router();
         router.get("/", async (request, response) => {
             response.json({
-                message: "Hello World!"
+                message: "Hello World!",
             });
         });
         this.app.use("/", router);
         // attach other routes from ./routes dir
         this.app.use(helloRoute);
-        
+
         // default error handling
         this.app.use((req, res) => {
             res.status(400).json({message: "page not found"});

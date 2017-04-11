@@ -1,9 +1,9 @@
 import * as express from "express";
-import {Request, Response, NextFunction} from "express-serve-static-core";
+import {NextFunction, Request, Response} from "express-serve-static-core";
 
-module HelloController {
-    export async function hello(req: Request, res: Response, next: NextFunction) {
-        res.json("Hello from controller!");        
+class HelloController {
+    public async hello(req: Request, res: Response, next: NextFunction) {
+        res.json("Hello from controller!");
     }
 }
 

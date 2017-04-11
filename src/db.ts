@@ -1,9 +1,9 @@
-import {IDbConfig} from "./config";
+import { IDbConfig } from "./config";
 
-module Db {
+class Db {
 
-    export async function connect(config: IDbConfig) {
-        return new Promise(resolve => resolve() );
-    } 
+    public async connect(config: IDbConfig) {
+        return new Promise((resolve) => resolve());
+    }
 }
-export default Db;
+export default new Db();
