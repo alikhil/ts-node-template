@@ -34,10 +34,12 @@
     "chai-http": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-copy": "^1.0.0",
+    "gulp-tslint": "^8.0.0",
     "gulp-typescript": "^3.1.5",
     "mocha": "^3.2.0",
     "ts-node": "^2.1.0",
-    "typescript": "^2.2.1"
+    "tslint": "^5.1.0",
+    "typescript": "^2.2.2"
   },
   "dependencies": {
     "body-parser": "^1.17.1",

@@ -4,6 +4,18 @@ const copy = require("gulp-copy");
 
 const tsProject = ts.createProject("tsconfig.json");
 
+const gulp_tslint = require('gulp-tslint');
+
+gulp.task('tslint', () => {
+    gulp.src(['test/*.ts'])
+      .pipe(gulp_tslint({
+          formatter: "prose"
+      }))
+      .pipe(gulp_tslint.report({
+          emitError: false
+      }));
+});
+
 gulp.task("copy-configs", () => {
     return gulp.src("./src/configs/*.json")
         .pipe(gulp.dest("out/configs"));
