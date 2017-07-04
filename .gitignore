@@ -6,6 +6,8 @@ settings.json
 # js Compiled files
 /out
 
+# API Docs
+/docs
 # Logs
 logs
 *.log

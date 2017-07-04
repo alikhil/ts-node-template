@@ -5,7 +5,8 @@
   "main": "out/index.js",
   "scripts": {
     "start": "node out/index.js",
-    "test": "mocha --reporter spec --compilers ts:ts-node/register src/test/**/*test.ts"
+    "test": "mocha --reporter spec --compilers ts:ts-node/register src/test/**/*test.ts",
+    "gen-doc": "./node_modules/.bin/apidoc -i src/apidoc -o docs"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "@types/mocha": "^2.2.39",
     "@types/morgan": "^1.7.32",
     "@types/node": "^7.0.8",
+    "apidoc": "^0.17.6",
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
     "gulp": "^3.9.1",
@@ -45,5 +47,11 @@
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "morgan": "^1.8.1"
+  },
+  "apidoc": {
+    "title": "API documentation",
+    "url": "http://localhost:1337/api/",
+    "version": "0.0.1",
+    "sampleUrl": "http://localhost:1337/api/"
   }
 }
