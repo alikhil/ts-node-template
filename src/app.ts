@@ -26,9 +26,9 @@ class App {
                 message: "Hello World!",
             });
         });
-        this.app.use("/", router);
         // attach other routes from ./routes dir
-        this.app.use(helloRoute);
+        this.app.use("/api/", helloRoute);
+        this.app.use("/", router);
 
         // default error handling
         this.app.use((req, res) => {
